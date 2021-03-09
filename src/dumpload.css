@@ -1,0 +1,78 @@
+* {
+	font-family: sans-serif;
+}
+body {
+	background-color: #0c0c0c;
+	color: #ececec;
+	margin: 2vh 5vw;
+	font-size: 2vmin;
+}
+a, a:visited {
+	text-decoration: underline;
+	color: #E2A830;
+}
+
+pre {
+	font-family: monospace;
+	font-size: 1.39vw;
+}
+
+
+
+table, 
+table tr {
+	border: 1px solid #6d6d6d;
+	border-collapse: collapse;
+}
+
+table {
+	font-size: 2vmin;
+	width: 90vw;
+}
+
+
+table th, table td {
+	border-right: 1px solid #6d6d6d;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+thead {
+	background-color: #4c4c4c;
+}
+tr:nth-child(even) {
+	background-color: #242424;
+}
+
+
+table th:first-child,
+table td:first-child {
+	width: 39.5vw;
+	padding-left: .5vw;
+}
+
+table td:first-child a {
+	color: #ececec;
+	text-decoration: none;
+}
+
+table td:first-child a:hover {
+	text-decoration: underline;
+}
+
+
+table td:first-child {
+	text-align: left;
+}
+
+table td.actions a,
+table td.actions a:visited {
+	text-decoration: none;
+}
+
+.dropzone {
+	background-color: #bebebe !important;
+	color: #060606;
+	margin: 2vmin auto;
+	border-radius: 2vmin;
+}
