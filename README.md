@@ -50,13 +50,20 @@ This is for very specific use cases in closed environments.   Use at your own ri
 
 ## What's With the Name?
 
-> **Me:** So you know the upload and download pages for the studio?  I've normalized them into a functional piece of code that can actually be used in places.   I mean, it's a "security nightmare" as it just lets people arbitrarily upload crap if it's configured the right way.
+> **Me:** So you know the upload and download pages for the studio?  I've normalized them into a functional piece of code that can actually be used in places.   I mean, it's a "security nightmare" as it just lets people arbitrarily upload crap if it's configured the right way.\
+> 
 > **Me:** That's not the point though.
+> 
 > **Me:** The point is I wanted to give it a name that says "this might be unpleasant."
+> 
 > **Me:** I went with "dumpload"
+> 
 > **R**:  ahahahahah
+> 
 > **R**: my first thought was "barf bag"
+> 
 > **Me:** kind of a combined portmanteau of "download"  "upload" and "dumb"
+> 
 > **S:** Sounds less unpleasant than crap chute
 
 ## License
