@@ -56,10 +56,18 @@ class config {
 }
 
 function do404() {
-	header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found"); 
+	http_response_code(404);
 	echo "<html><body><h1>404 &mdash; haha, no.</h1></body></html>\n";
 	exit;
 }
+
+function do400(string $str = "Unknown error.") {
+	http_response_code(400);
+	echo "<html><body><h1>400 &mdash; $str</h1></body></html>\n";
+	exit;
+}
+
+
 
 require("dumpload.class.php");
 
