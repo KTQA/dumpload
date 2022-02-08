@@ -20,7 +20,7 @@ It has been tested using apache and lighttpd, the latter being the primary targe
 
 Get or make the phar, and then update your configuration to have an alias which points to it.  Set an environment variable called `DUMPLOADDIR` which then points to the directory you want to manage.   Assuming you have read capability into that directory you'll then see those files as an index.
 
-If you create a text file called `README` in that directory, it will be included at the top of the page and not show up in the file list.
+If you create any files with `README` in the name, it will be included at the top of the page and not show up in the file list.
 
 This doesn't offer much more than autoindexes, doesn't it?
 
@@ -50,7 +50,7 @@ This is for very specific use cases in closed environments.   Use at your own ri
 
 ## What's With the Name?
 
-> **Me:** So you know the upload and download pages for the studio?  I've normalized them into a functional piece of code that can actually be used in places.   I mean, it's a "security nightmare" as it just lets people arbitrarily upload crap if it's configured the right way.\
+> **Me:** So you know the upload and download pages for the studio?  I've normalized them into a functional piece of code that can actually be used in places.   I mean, it's a "security nightmare" as it just lets people arbitrarily upload crap if it's configured the right way.
 > 
 > **Me:** That's not the point though.
 > 

@@ -10,6 +10,8 @@ class dumpload {
 	protected string $dwn;
 	protected string $del;
 
+	public array $readmes = array();
+
 	public function __construct(
 		string $dir    = null,
 		bool   $delete = null,
@@ -29,8 +31,11 @@ class dumpload {
 
 		foreach ($files as $f) {
 			if (substr($f, 0, 1) == '.') continue;
-			if ($f == "README") continue;
-			$times[$f] =  filemtime($this->dir.'/'.$f);
+			if (strpos($f, "README") !== false) {
+				$this->readmes[] = $f;
+			} else {
+				$times[$f] =  filemtime($this->dir.'/'.$f);
+			}
 		}
 
 		asort($times, SORT_NUMERIC);

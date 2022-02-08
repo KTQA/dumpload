@@ -48,9 +48,10 @@ if (config::$upload) {
 			printf("<input type='hidden' id='age' value='%d' />\n", config::$age);
 		}
 
-
-		if (file_exists(config::$dir.'/README')) {
-			printf("\t<pre>\n%s\n\t</pre>\n", file_get_contents(config::$dir.'/README'));
+		if (count($d->readmes) > 0) {
+			echo "<pre>\n";
+			foreach ($d->readmes as $file) echo file_get_contents(config::$dir.'/'.$file);
+			echo "</pre>\n";
 		}
 
 		if (config::$upload) {

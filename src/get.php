@@ -1,6 +1,6 @@
 <?php
 
-if (substr($file, 0, 1) == '.' || $file == "README") do404();
+if (substr($file, 0, 1) == '.' || strpos("README", $file)) do404();
 $fname = config::$dir.'/'.$file;
 if (!file_exists($fname)) do404();
 

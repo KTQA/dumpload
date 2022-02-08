@@ -15,6 +15,7 @@ a, a:visited {
 pre {
 	font-family: monospace;
 	font-size: 1.39vw;
+	white-space: pre-wrap;
 }
 
 
